@@ -3,7 +3,7 @@ from openai import OpenAI
 
 # 初始化 API 客户端
 client = OpenAI(
-    api_key="请替换成你自己的 API Key",  # 请替换成你自己的 API Key
+    api_key="sk-15e3638d218d4e448365fb53fe011db7",  # 请替换成你自己的 API Key
     base_url="https://api.deepseek.com"
 )
 
@@ -70,10 +70,9 @@ def generate_stand_description():
 替身名：『xxxx』
 
 能力：
-能力：
 第一句清楚描述核心能力。
 第二句说明它带来的影响或结果（强调实际效果）。
-
+1
 "xxx"
 """
 

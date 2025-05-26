@@ -6,7 +6,6 @@ from gpt_logic import (
 from stand_utils import modify_description, parse_stats
 from player_utils import generate_player_physical
 from encounter_engine import generate_encounter
-from battle_system import stat_to_value
 from turn_engine import run_battle_loop
 
 import random
@@ -82,7 +81,7 @@ def main():
     stand_result = {"desc": None}
 
     def gpt_background_task():
-        print("请选择替身生成风格：")
+        print("\n请选择替身生成风格：")
         print("1. 普通清晰型（适合互动与改字）")
         print("2. 创意灵感型（多段能力 + 灵感扰动）")
         choice = input("请输入 1 或 2：").strip()
@@ -96,7 +95,7 @@ def main():
     thread.start()
 
     # 加载动画
-    print("🎮 欢迎来到 JOJO 替身文字战斗系统")
+    print("\n\n🎮 欢迎来到 JOJO 替身文字战斗系统")
     print("请耐心等待...")
     time.sleep(2)
     print("替身生成中...")
